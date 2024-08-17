@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>portfolio</title>
+        <link rel="stylesheet" href="stylesheet.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+        <script
+            src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    </head>
+
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Personal Portfolio</a>
+
+            <nav class="navbar">
+                <a href="#" style="--i:1" class="active">Home</a>
+                <a href="#about" style="--i:2">About</a>
+                
+                <a href="#project" style="--i:4">Projects</a>
+                <a href="#contact" style="--i:5">Contact Us</a>
+
+            </nav>
+        </header>
+
+        <section class="home">
+            <div class="home-content">
+                <h3>Hello, it's me</h3>
+                <h1>Deep Ghinaiya</h1>
+                <h3>And I am a <span id="text"></span></h3>
+                <br>
+                <p>I am is a BCA student with technical skills C/C++,Python
+                    programming and Frontend wed
+                    developer.</p>
+                <br>
+
+                <div class="home-sci">
+
+                    <a href="https://linkedin.com/in/deep-ghinaiya-70608b25a"
+                        style="--i:8"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAftJREFUSEvtl09rE1EUxc+dpCVQECFWWkJdxDFRirrrTpp+gdjPIBnHxGZM17oogm4E285EwiRNF9IPIIg7QcGVaxHFvgYURa1u3KhV5107sVOmpWj+TCZF+pYP5v7mnHvumzeEPi3qExf7B5xcsI8pESUZpBPSkY1GSX/jr7lD8al5e/RnVHkHBO4ED/ySiRez+nsPvgOsWrUMgEdBqvXVmhJF7XEbYFoFeAxArMsXagPMlBVG7v6ZW3eHvsY2Hmy6MdkFvGXwR1HURjzQCat6iUGVMMCOHJTxhq5/cWGqVb0N0GwYYDDwEMR1QBkn5hkAh0MBdwHZ69GWe+xO8zQYTasBvgLQ9KbrKwDq7g6BJhicJfC8jDpP1vL59ZRZOycJ1wG4o+lfrYOVQTn8Stc/N3ts1sogXCbgxmpRu9bcK1fHIb8LYRgbfkJmbi76Np54BuBkR3P8L7BXNGnZpxUe+CCMC5+8PdWqFgC60zOwatbugXAegAPis2Lm4nMXljKXJiTx056AVXPlEOjbVgbcGOCqMLSbLmzrY/O6R2D7OEgRXnEGLa4Vc6WmYts+In8o29YDaD1c4MhRr297hSu9UE87EflyWxWjIgyt8CeMy8MgZ70jxQfg3XP8H1od7GHdRqrDAvftsuc7ccK93gbr7N+r7Z8/ibBU/wYoyHcut+AEbAAAAABJRU5ErkJggg==" /></a>
+                    <a href="https://github.com/Ghinaiya-Deep"
+                        style="--i:10"><img
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAABB1JREFUSEvFlt9vFFUUx7/nzrIJEAEVLRSLZXdWbTFoEH9A/AOIJoqa1Adite3OLqWdVZrog4mmjSYmYlrd3Va30xaIPJgmoAkJic8+UK3G36x0Z9uqWCJiDIqhtDNzzIy7dGa7027LQ+/bzP2e8znn3nPPvYQVGrRCXCwN3Nkp5Fu2PEREIYt5M4iI2LrAJCbzVetG0NBgVppIReBt6YE7A8yvMvAMgFt9nP8FxgkKSG/lDjaPLxbAguD6zuHgtY1/v0bMrwAILuasMG+A8Hbw0vqus50NM342vuC6nszm2VXiFBgPVAj0yIgxKkjsO6e2TJWzLwu+p+f9WiMQOANg03KgLpspk2jPRHv051I/88Bb+/puDprBzwGOFMR5wCnCUIVB2JBrAO4q6LNW0No9Ho9fdtvPA0dS2lEGnp8T8V5djX0qpzM7weIwgO0AsmBkiWAwsJ2BOsGUNyWrY7wtNhrqzTwqLPHZnA/SdDUa8wVH0pmHmcWIWxAwjG0/HWqdrDBbR1bbe2RTwDIuuGwYLN2rJ5rPFv95MpbT2nEw9rshgsX9Y4mWb5cClpND9SDzxxKbQV1VovPBw8OS/PvlSwA2uAwuFiL9Y2ng4+tAV7MAqt2FpqvKlnngUGpwl4A16gYwOJFXY6mlQIvacFqLESPj2VeB+lybYgc01zLDqYF9BP7YLZSA0DlVmVgO+O7UYLUJ6zePLdMTeiJ6ygOW0wNRMGtu4SrDqs4eiruLpOIYqjOZNWtmxL9+K3i9uMLJfoWI+t1CU8J9EweV7yqmuYTh3qEassxfvGB6Oa9G3/FkHElqTzPhRMlZa86pypHlgOW09iQYn3jARC/k26PHvOBerY4tXD9nhcnTOVV5fDngSEo7ycBTblsL4sFxteVLD9j+kFOafZy81x5Ro94e/XAp8HBSaySCk5lrXNGr1m8o3tmeBhJO939ATHEAswDsprHLMSQeEpL5+lhrq7dKSzwXLpcuAI2lgTLR0Xx7tKn439u5XB2HGC8S8LVFsI+YvQoWMb6yBHfn22MfuR2Hewf2EvObYOx0H1HvMls7xtX492XBznIntR4QXnIEjN0QqAJjuPgQKNdC5eTQbSDzot92MOi9vBr932dhzLud7ujuXr06cNMIE3YQ4BSX41gYz4ExrauxvnIAOaXZ2+BukUXZN9Oz/+w539FxdUGwPRl6N7NVSOILAFXEdCCntvSDiBcqsHB6YIKYa0s0UyykR/Jtzb+W2vo+fQqFchpAHYArAMYA1OiqcrtPxnazqHHN/cBCeqwc1KnXhbKw297aGepiUAcAAeBPXVU2+oDt1mo/lWZBOGysDbwx2dQ07ee/ouet0/7YPAALsp5QnvUBHwPhvJCMvsWO3aIZL7QaNzpXUcY3Cilnv2Lg/wBZD3oukemjSgAAAABJRU5ErkJggg==" /></a>
+
+                </div>
+                <br>
+                <a class="btn-box" href="#about">For more about me</a>
+            </div>
+            <div class="rightsection">
+                <img src="1.webp" alt>
+            </div>
+            <span class="home-imgHover"></span>
+        </section>
+
+        <section class="about" id="about">
+            <div class="about-img"> <img src="1.webp" alt></div>
+            <div class="about-text">
+                <h2>About <span>Me</span></h2>
+                <h4>Frontend Developer</h4>
+                <p>I am Deep Ghinaiya, BCA Student at Savitribai Phule Pune
+                    University. My expertise spans several programming
+                    languages, including C, C++,
+                    Python, and JavaScript, alongside web development skills in
+                    HTML, CSS. My technical
+                    knowledge is enriched by practical experience, also I am
+                    working as Content Writers at Kshitiksha Foundation.
+                    I am also working in Social Media Marketing at Happy To Help
+                    Foundation.</p>
+
+                <a class="btn-box" href="#services">For more about me</a>
+            </div>
+        </section>
+
+        
+
+        <section>
+            <div id="portfolio" id="project">
+                <div class="main-text" id="project">
+                    <h2>Latest <span>Project</span></h2>
+                    <div class="portfolio-content">
+                        <div class="row">
+                            <img src="blog.png" alt>
+                            <div class="layer">
+                                <h5> Blog</h5>
+                                <p>Developing Blogs for education purposes like
+                                    Practise programs and Practical slip
+                                    solutions for BCA studnets under syllabus of
+                                    Savitribai Phule Pune University.i</p>
+                                <a
+                                    href="https://sppusybbacapracticalslipsolution.wordpress.com/">
+                                    <i class='bx bx-link-external'
+                                        style='color:aliceblue'></i></a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <img src="college.png" alt>
+                            <div class="layer">
+                                <h5> My College</h5>
+                                <p>Developed a websites for my college. It's
+                                    shows only syllabus and other important
+                                    information. </p>
+                                <a
+                                    href="https://cmcscollegenashik.netlify.app/">
+                                    <i class='bx bx-link-external'
+                                        style='color:aliceblue'></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="contact-text">
+                    <h2>Contact <span>Me</span></h2>
+                    <h4>Let's work Together</h4>
+
+                    <div class="contact-list">
+                        <br>
+                        <li><i class='bx bxs-send' style='color:#00eeff'></i>
+                            deep.c617.app@gmail.com
+                        </li>
+
+                        <li><i class='bx bxs-phone-call'
+                                style='color:#00eeff'></i> 6352442624</li>
+
+                    </div>
+
+                    <div class="cantact-icons">
+                        
+                        
+                        <a href="#"><i class='bx bxl-gmail'
+                                style='color:#00eeff'></i></a>
+                        <a href="https://linkedin.com/in/deep-ghinaiya-70608b25a"><i  class='bx bxl-linkedin'
+                            style='color:#00eeff'></i></a>
+                               
+                        <br>
+                        <a href="Deep-Ghinaiya.pdf"> <button>View CV
+                            </button></a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action>
+
+                        <input type placeholder="Enter Your Name " required>
+                        <input type="email" placeholder="Enter Your Email"
+                            required>
+
+                        <input type placeholder="Enter your Subject">
+                        <textarea name id cols="40" rows="10"
+                            placeholder="Enter Your Message"></textarea>
+                        <input type="submit" value="Submit" class="send">
+
+                    </form>
+                </div>
+            </section>
+        </body>
+        <script src="script.js"></script>
+    </html>
